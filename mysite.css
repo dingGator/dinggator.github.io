@@ -1,0 +1,271 @@
+/*******************************
+
+   CGS1820
+   Class Project #4 Excercise 6
+   Chapter 3 Hands-On Practices
+
+   Author: KT Chu
+   Date: 2/17/2016
+
+   File name: mysite.css
+   Supporting files:	index.html
+   						history.html
+   						exoIt.html
+   						favorites.html
+   Purpose:
+   To use CSS style sheet to add
+   colors and styles to HTML
+**************************************
+*/
+
+/********************************************
+* tag:		html, body, header, h1
+*	reset that reduces browser inconsistencies
+*****************************************/
+
+html, body, header, h1{
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+/******************************************
+*tag:		body
+*	set for everything in body
+*	background-color:light blue
+	color: dark blue
+*******************************************/
+body { background-image: url(images/IMG_20160227_142724.jpg);
+		color: #191970;
+		font-family:  Arial, Verdana, sans-serif;
+}
+
+/******************************************
+* id= 		#wrapper
+*	set for everything under body in a div  *
+*******************************************/
+header {
+	font-family: 'Libre Baskerville';
+}
+#wrapper {	width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+}
+
+#location{ 	font-family: 'Libre Baskerville';
+			background-color: #E6E6FA;
+			border-bottom: 10px;
+			border-top: 10px;
+			border-spacing: 10px;
+			border-radius: 15px;
+			text-align: center;
+
+}
+
+
+/*************************************
+* tag:  	nav
+*	navigational tag
+		to link to another page
+*	set font to bold
+*	set font size
+*	text is centered
+*************************************/
+
+
+nav a {	float: left;
+		font-weight: bold;
+		font-size: 1.25em;
+		text-align: center;
+		border-bottom: 10px;
+		border-top: 10px;
+		border-spacing: 10px;
+
+		text-decoration: none;
+		margin-left: 15px;
+		margin-right: 15px;
+
+}
+
+nav {font-family: 'Libre Baskerville';
+	border-radius: 15px;
+	background-color:  #AEAEA1;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+
+img{border-radius: 15px;
+	width: 140px;
+	height: 140px;
+	box-shadow: 2px 1px 7px 5px #191970;
+}
+
+
+/******************************************
+* tag:  	h1
+*	background color: dark blue
+* 	color: light blue
+*	text-shadow: gray
+*	text is centered
+*******************************************/
+
+h1 {	background-color: #191970;
+		color:	#E6E6FA;
+		line-height: 200%;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		text-shadow: 3px 3px 5px #CCCCCC;
+		text-align: center;
+}
+
+/*************************************
+* tag: 		h2
+*	background-color: light blue
+*	color: dark blue
+* 	font-family: same as h1
+*	text is centered
+ ************************************/
+
+h2 {	background-color: #AEAED4;
+		color:	#191970;
+		font-family:  Georgia, "Times New Roman", Times, serif;
+		text-align: center;
+		border-radius: 15px;
+		padding-bottom: 20px;
+		padding-top: 10px;
+
+}
+/*************************************
+* tag: 		ul
+*	set font to bold
+************************************/
+ul{	border-radius: 15px;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+li{	border-radius: 15px;
+	display: inline-block;
+	width: 175px;
+	font-weight: bold;
+}
+/*************************************
+* tag: 		p
+*	set font size and text-indent
+ ************************************/
+
+p {	background-color: #E6E6FA;
+	font-size: .90em;
+	text-indent: 3em;
+	border-radius: 15px;
+	}
+
+.place {background-color: #E6E6E6;
+		border-radius: 15px;
+		font-size: 1.5em;
+		font-weight: bold;
+		box-shadow: 2px 1px 7px 5px #191970;
+}
+.parkhours{	border-radius: 15px;
+			font-weight: bold;
+			width: 350px;
+			background-color: #6666FF;
+			float: left;
+			color: #FFFF66;
+			padding-left: 20px;
+			padding-right: 20px;
+
+}
+.parkfees{	border-radius: 15px;
+			font-weight: bold;
+			background-color: #66B3FF;
+			width: 350px;
+			float:right;
+			color: #00003F;
+			padding-left: 20px;
+			padding-right: 20px;
+
+}
+
+
+.park_intro {	background-color: #EA00FF;
+				border-radius: 15px;
+				font-size: 1.25em;
+				color: #00003F;
+}
+.site_intro{	background-color: #66B3FF;
+				border-radius: 15px;
+				font-size: 1.25em;
+				color: #00003F;
+}
+
+.legends{	background-color: #EA00FF;
+			border-radius: 15px;
+			font-size: 1.25em;
+			color: #00008B;
+
+}
+.tourSummary{	background-color: #15FF00;
+				border-radius: 15px;
+				font-size: 1.25em;
+				color: #A400B3;
+
+}
+.favoritePoints{
+					background-color: #E6AEFA;
+					border-radius: 15px;
+					font-size: 1.25em;
+					color: #00008B;
+
+}
+/******************************
+*class=		.feature
+* 	color: dark red
+***************************/
+.feature {	color: #C70000;
+			border-radius: 15px;}
+
+.image{	box-shadow: 2px 1px 7px 5px  #EEEEEE;
+		border-radius: 15px;
+
+}
+.treasure_hunt{	box-shadow: 2px 1px 7px 5px #EEEEEE;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 1.25em;
+}
+
+figure {
+	width: 600px;
+	height: 480px;
+	border: 2px solid #000000;
+	padding: 5px;
+}
+figcaption{ font-size: 1.25em;
+	background-color: #E6AEFA;
+	text-align: center;
+	font-family: "Times New Roman",Times, serif;
+}
+.challenge{
+	width:600px;
+	height: 430px;
+}
+/******************************
+*tag:		footer
+*	color: black
+*	text is italic
+*	text is centered
+*****************************/
+footer {	background-color: #E6E6AF;
+			border-radius: 15px;
+			color: #333333;
+			font-size: 1.00em;
+			font-style: italic;
+}
+.footerCenter {
+		text-align: center;
+
+
+}
+
