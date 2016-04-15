@@ -8,7 +8,7 @@
   Class/assigment:
   CGS1820 / Final Project
 
-  File name: index.html
+  File name: expIt.html
   Language: HTML5
 
   Includes:   mysite.css
@@ -18,12 +18,19 @@
 To work with various ids, styles and descendant styles
 *******************************
 -->
-	<title>Devils Millhopper</title>
-	<meta charset="utf-8">
+<title>Devils Millhopper Experience It</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="mysite.css" >
 
-	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="mysite.css">
+
+  <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+<![endif]-->
+
 </head>
+
 <body>
   <div id="wrapper">
     <header>
@@ -31,12 +38,12 @@ To work with various ids, styles and descendant styles
       <h1>Devils Millhopper Geological State Park</h1>
       <h2>Experience It</h2>
       <h2 class="place"><br> 4732 Millhopper Rd, Gainesville, FL 32653</h2>
-
+  <div id="parkInfo">
         <dl class="parkhours">
-        <dt><br> Hours:<br></dt>
-        <dd> Open 9:00 am to 5:00 pm</dd>
-        <dd>Wednesday through Sunday<br></dd>
-        <dd>The park is closed:<br>Monday and Tuesday<br><br></dd>
+          <dt><br> Hours:<br></dt>
+          <dd> Open 9:00 am to 5:00 pm</dd>
+          <dd>Wednesday through Sunday<br></dd>
+          <dd>The park is closed:<br>Monday and Tuesday<br></dd>
         </dl>
 
 
@@ -46,28 +53,27 @@ To work with various ids, styles and descendant styles
           <dd>Up to 8 visitors per vehicle<br></dd>
           <dd>Pedestrians and bikes are $2.00<br><br></dd>
         </dl>
-
+  </div>
     </header>
-    <div class="nav_history">
- <nav>
+<div id="flexbox_use">
+   <nav>
    <ul>
-
-
       <li><a href="index.html">  Home&nbsp;&nbsp;  </a></li>
       <li><a href="history.html">  History&nbsp;&nbsp;  </a></li>
       <li><a href="expIt.html">  Experience It&nbsp;&nbsp;  </a></li>
       <li><a href="favorites.html">  Favorites&nbsp;&nbsp;  <br></a></li>
+
      </ul>
-     <img  id="floatright"src="images/IMG_20160227_142724.jpg" width ="125" height="200" alt="Forest Scenery">
+
+
+
      </nav>
-     </div>
-<div id="rightCol">
-<main id ="content">
+   <main id ="content">
 
 <h3>Devils Millhopper Tour<br></h3>
 
         <p class="tourSummary">
-        <img  id="floatright"src="images/IMG_20160227_142724.jpg" width ="150" height="200" alt="Forest Scenery">
+        <img  id="floatright" src="images/IMG_20160227_142724.jpg"  alt="Forest Scenery">
 
           The tour was wonderful.  The guide started with an overview of the sinkhole and the uplands surrounding the sinkhole.  He pointed out the spruce pines and the chestnut oaks in the uplands.  There were orchids, and needle palms.  Longleaf pines were seen everywhere in the uplands.<br>
             As he guided us down the boardwalk, he pointed out the different features of the sink hole.  The Indian hunted around the creeks of the sinkhole because the deer came to drink the water from the streams.  Lush ferns painted the cavity wall with a lush green, and feeding off the water of the creeks.  Needle palms and orchids were scattered with the ferns giving a beautiful wall to the sink hole.<br>
@@ -75,14 +81,14 @@ To work with various ids, styles and descendant styles
             Then he told the legends of the name of the sinkhole, Devils Millhopper.<br>
         </p>
 
-<footer>
+</main>
+</div>
+    <footer >
       Copyright &copy; 2016 Kim Chu <br><a href="mailto:kim@chucrew.net">kim@chucrew.net</a>
     </footer>
 
 
-</main>
+  </div>
+</body>
+</html>
 
-    </div>
-    </div>
-    </body>
-    </html>
