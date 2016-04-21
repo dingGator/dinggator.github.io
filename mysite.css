@@ -47,9 +47,9 @@ header, h1,#wrapper { margin-top: 0;
 
 *****************************************/
 #wrapper {  background-color: #E6E6FA;
-  width:80%;
+  width:90%;
   margin:auto;
-
+border-radius: 2%;
 }
 /********************************************
 * tag:location
@@ -147,6 +147,7 @@ h1 {  background-color: #191970;
     font-size: 200%;
     text-shadow: 3px 3px 5px #CCCCCC;
     text-align: center;
+    border-radius: 25%;
 }
 
 /*************************************
@@ -187,7 +188,7 @@ h3{ text-align: center;
         flex-direction: row;
      }
 
-nav, main,aside{ padding:0 0; }
+main,aside{ padding:0 0; }
 /********************************************
 * use the webkit & flexbox to configure website
 *to format webpage to two columns or three columns
@@ -198,20 +199,24 @@ nav, main,aside{ padding:0 0; }
 
 note:  flex and webkit-flex: should add up to 10;
 ****************************************/
-nav {  -webkit-flex:1.5;
-      flex:1.5;
+nav {  -webkit-flex:2;
+      flex:2;
 }
 
 main {
-  -webkit-flex:6;
-flex:6;
+  -webkit-flex:5;
+flex:5;
 }
 
 aside {
-  -webkit-flex:2.5;
-flex:2.5;
+  -webkit-flex:3;
+flex:3;
 }
 
+.content_His_Exp_Fav{
+  -webkit-flex:8;
+  flex:8;
+}
 
 dl{ margin: 0 10% 1% 5%;
 }
@@ -223,6 +228,8 @@ ul{
   font-weight: bold;
 }
 
+nav{display:block;
+margin: auto;}
 li{
 
   font-weight: bold;
@@ -314,11 +321,17 @@ p {
   float:right;
 }
 
+.image_challenge {clear:right;
+                  display: block;
+                  margin: auto;
+                  }
 /********************************************
 * tag: aside
 *  The challenge ( third column )in the home page
 *
 ****************************************/
+main a{color:#006600;
+  text-decoration: none;}
 
 aside{
   float: right;}
@@ -344,6 +357,7 @@ aside h2{
 
 img { width: 80%;
  box-shadow: 2px 1px 7px 5px #191970;
+ border-radius: 20%;
 
 }
 
@@ -383,7 +397,8 @@ footer {
         justify-content: center;
       }
       main {padding:1em;}
-      img {width: 95%;}
+      img {width: 70%;}
+
 
      }
 
